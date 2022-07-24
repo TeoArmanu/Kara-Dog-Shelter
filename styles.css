@@ -128,10 +128,11 @@ nav{
     border-radius: 10px;
     background-color: yellow;
     color: black;
+    transition: 250ms ease-in-out;
 }
 
 .cta-btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .cta-btn + .cta-btn{
@@ -301,11 +302,12 @@ nav{
     font-size: 1rem;
     font-weight: 700;
     position: relative;
+    transition: 250ms ease-in-out;
 }
 
 
 .adopt-dogs:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 
