@@ -407,9 +407,10 @@ nav{
 }
 
 
-iframe{
-    width: 100%;
-}
+
+.contact-box{
+    margin-bottom: 2em;
+   }
 
 
 
@@ -709,9 +710,6 @@ iframe{
     margin: 0 auto;
    }
 
-   .contact-box{
-    margin-bottom: 2em;
-   }
 }
 
 
