@@ -103,8 +103,12 @@ nav{
     margin-bottom: 0.5em;
     margin-top:.5em;
     cursor: pointer;
-    box-shadow: 2px 2px 10px 0 rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px 0 rgb(0, 0, 0);
     transition: 250ms ease-in-out;
+}
+
+.link-cta-btn{
+    width: 80%;
 }
 
 .banner-btn + .banner-btn{
@@ -133,6 +137,7 @@ nav{
     background-color: yellow;
     color: black;
     transition: 250ms ease-in-out;
+    margin-bottom: 1em;
 }
 
 .cta-btn:hover{
@@ -154,10 +159,11 @@ nav{
 .who-main-title,
 .what-main-title,
 .dogs-title,
-.benefits-title{
+.benefits-title,
+.articles-main-title{
     text-align: center;
     margin-top:2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.7em;
     font-size:2rem;
     position:relative;
 }
@@ -166,7 +172,8 @@ nav{
 .who-main-title::before,
 .what-main-title::before,
 .dogs-title::before,
-.benefits-title::before{
+.benefits-title::before,
+.articles-main-title::before{
   content:'';
   position: absolute;
   width:2em;
@@ -181,8 +188,12 @@ nav{
 .who-title,
 .service-title{
     color:#77adfd;
-    margin: 0;
+    margin:0;
     font-size: 1.5rem;
+}
+
+.service-title{
+    margin-top: .7em;
 }
 
 
@@ -196,6 +207,11 @@ nav{
 
 .sponsor-action{
     margin-top: 3em;
+}
+
+.sponsor-link{
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -258,9 +274,6 @@ nav{
    transform: scale(1.05);
 }
 
-.card-header{
-    border: none;
-}
 
 .card-img{
     width: 100%;
@@ -388,6 +401,32 @@ nav{
 }
 
 
+.articles{
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.articles-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-item{
+    margin-bottom: 1.5em;
+}
+
+.article-link{
+    color: #77adfd;
+}
+
+.article-link:hover{
+    color: black;
+}
+
+
+
+
 .footer{
     background-color: rgb(249, 249, 92);
     padding: 2em 0;
@@ -407,12 +446,10 @@ nav{
 }
 
 
-
 .contact-box{
+    align-self: center;
     margin-bottom: 2em;
-   }
-
-
+}
 
 .contact-link{
     text-decoration: none;
@@ -499,6 +536,18 @@ nav{
     color: rgb(114, 114, 114);
 }
 
+.link-home::before{
+    content: '\f015';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: .5em;
+    color: #77adfd;
+}
 
 .link-dogs::before{
     content: '\f6d3';
@@ -710,6 +759,9 @@ nav{
     margin: 0 auto;
    }
 
+   .contact-box{
+    margin-bottom: 2em;
+   }
 }
 
 
@@ -854,20 +906,27 @@ nav{
     .dogs-title,
     .benefits-title,
     .adopt-title,
-    .boop-title{
-    font-size:3rem;
+    .boop-title,
+    .articles-main-title{
+    font-size:2.5rem;
     }
 
 
  
 
     .sponsor-title{
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .sponsor-action{
+        width: 50%;
+        margin: 2em auto;
     }
 
     .sponsor-text,
-    .adopt-text{
-        font-size: 1.5rem;
+    .adopt-text,
+    .article-link{
+        font-size: 1.3rem;
     }
 
 
@@ -875,6 +934,14 @@ nav{
         padding-bottom: 5em;
     }
 
+    .adopt-btn{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .adopt-dogs{
+        width: 40%;
+    }
 
     .adopt-img,
     .sponsor-img{
@@ -889,4 +956,10 @@ nav{
     .boop-content{
         width: 40%;
        }
+
+       .contact-box{
+        margin-bottom: 0;
+    }   
 }
+
+
