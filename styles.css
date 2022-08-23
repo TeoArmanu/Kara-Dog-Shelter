@@ -8,7 +8,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: azure;
-    font-family: 'Carter One', sans-serif;
     line-height: 1.8;
 }
 
@@ -166,6 +165,7 @@ nav{
     margin-bottom: 1.7em;
     font-size:2rem;
     position:relative;
+    font-family: 'Carter One', sans-serif;
 }
 
 
